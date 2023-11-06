@@ -1,7 +1,11 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import {Rajdhani} from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const rajdhani=Rajdhani({weight:['400','700'],subsets:['latin'],
+display:'swap'})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${rajdhani.className} relative m-0 w-full h-screen overflow-scroll`} >{children }</body>
     </html>
   )
 }
