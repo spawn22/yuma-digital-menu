@@ -2,7 +2,7 @@
 
 
 import BannerMenu from "../components/BannerMenu.jsx"
-import Footer from "../components/Footer.jsx"
+import Footer2 from "../components/Footer2.jsx"
 import Nav from "../components/Nav.jsx"
 
 const page = () => {
@@ -16,7 +16,7 @@ const page = () => {
    
    
     
-    <Footer/>
+    <Footer2/>
     
 </div>
 
