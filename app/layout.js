@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${rajdhani.className} relative m-0 w-full h-screen `} >{children }</body>
+      <body className={`${rajdhani.className} relative m-0 bg-[#3C3C3C] w-full h-screen `} >{children }</body>
     </html>
   )
 }
