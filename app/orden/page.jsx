@@ -1,9 +1,16 @@
 import React from 'react'
+import Nav from '../components/Nav'
+import Footer2 from '../components/Footer2'
+import OrdenList from '../components/OrdenList'
+
 
 const page = () => {
   return (
-    <div>
-      
+    <div className='w-full relative  aspect-auto bg-inherit bg-cover bg-[#3C3C3C] flex flex-col'>
+    <Nav/>
+    <OrdenList/>
+   
+    <Footer2/>      
     </div>
   )
 }

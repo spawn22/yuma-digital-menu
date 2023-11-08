@@ -23,11 +23,11 @@ const BannerMenu = () => {
       <div className="  relative text-center flex text-[#F7AD1A] mt-5 mb-6 text-sm font-normal ">
         SLOGAN
       </div>
-      <Link href={''} className="w-72 bg-[#3C3C3C] h-16 bg-opacity-95 rounded shadow border-2 text-center flex flex-wrap justify-center hover:text-amber-600 text-[#F7AD1A] text-xl font-normal hover:border-amber-600 border-[#F7AD1A]">
+      <Link href={''} className="w-60 sm:w-72 bg-[#3C3C3C] mx-auto h-16 bg-opacity-95 rounded shadow border-2 text-center flex flex-wrap justify-center hover:text-amber-600 text-[#F7AD1A] text-xl font-normal hover:border-amber-600 border-[#F7AD1A]">
         {" "}
         <Image
           alt="icono menu"
-          className="w-14 h-14 aspect-auto my-auto"
+          className="w-14 h-14  aspect-auto my-auto"
           src={menuIcon}
         />
         <p className="my-auto">IR AL MENÚ</p>

@@ -9,13 +9,13 @@ const Footer2 = () => {
   return (
     <section>
 
-<div className="w-full py-1 shadow-md bottom-0 left-0 right-0  bg-[#3C3C3C] fixed justify-between  inline-flex">
-      <div className="text-center w-1/3 flex  text-zinc-100 text-opacity-70 ">
+<div className="w-full py-1 shadow-md bottom-0 left-0 right-0  bg-[#3C3C3C] fixed justify-between flex-wrap flex">
+      <div className="text-center w-1/3 flex-wrap flex-grow text-zinc-100 text-opacity-70 ">
         
         <Image alt="logo YUMA landing" priority={true} className="w-[9.5rem]  aspect-auto " src={logoFoot} />
       </div>
-      <div className="text-amber-400 text-xs bottom-0 fixed text-center w-full font-normal">© 2023 YUMA. Todos los derechos reservados</div>
-      <div className="w-1/3 flex justify-end gap-2  mr-4">
+      <div className="text-amber-400  text-xs flex-wrap  flex-grow bottom-0 fixed text-center w-full font-normal">© 2023 YUMA. Todos los derechos reservados</div>
+      <div className="w-1/3 flex justify-end flex-wrap  flex-grow fle gap-2  mr-4">
         <div className="w-10 my-auto h-10">
           <Image className=" w-full h-full my-auto" alt="logo fb" src={faceLogo} />
         </div>

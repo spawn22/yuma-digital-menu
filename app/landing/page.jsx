@@ -35,8 +35,8 @@ const page = () => {
 
     
 
-<div style= {{ backgroundImage: `${navMobile?"url('/assets/fondocomidas1.png')":"url('/assets/fondocomidas2.png')"}`,
-  }} className="bg-blend-multiply bg-inherit w-full aspect-auto bg-no-repeat bg-cover bg-center flex flex-col">
+<div style= {{ backgroundImage: `${navMobile?"url('/assets/fondocomidas1.png')":"url('/assets/fondocomidas2.png')"}`, 
+  }} className="bg-blend-multiply bg-inherit w-full h-full aspect-auto bg-no-repeat bg-cover bg-center flex flex-col">
     
     <Nav/>
     
