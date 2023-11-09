@@ -1,12 +1,49 @@
-import React from "react";
+'use client'
+import{ useState } from "react";
 import OrdenItem from "./OrdenItem";
 import Resumen from '../components/Resumen'
-const item={producto:'burguer',
-                precio:3,}
-    const orden=[item,item,item,item]
+
 
 
     const OrdenList = () => {
+      const [subtotal,setSubTotal]=useState(0)
+      
+      const[orden,setOrden]=useState([{
+          id:1,  
+          producto:'burguer',
+          precio:3,
+          
+          
+        },
+        {
+          id:2,  
+          producto:'burguer',
+          precio:3,
+          
+          
+        }])
+      
+        const totalParaPagar = (elemento, cantidadE) => {
+          const index = orden.findIndex(item => item.id === elemento.id);
+      
+          
+          const updatedOrden = [...orden];      
+         
+          updatedOrden[index].cantidad = cantidadE;
+
+          if (cantidadE === 0) {
+            updatedOrden.splice(index, 1);
+          }
+      
+          const newSubtotal = updatedOrden.reduce((total, item) => total + item.precio * item.cantidad, 0)
+      
+          
+          setSubTotal(newSubtotal);
+          setOrden(updatedOrden);
+        };
+        
+    
+   
     
   return (
     <section className='"w-full flex flex-col gap-2 content-center mt-5 mb-6 pt-24 pb-32 items-center text-center'>
@@ -22,13 +59,17 @@ const item={producto:'burguer',
         
         
         {orden.map((elemento,i)=>
+          
             <li key={i}>
-                <OrdenItem elemento={elemento}/>
-            </li>
-        )}
-        </ul>)}
 
-        <Resumen/> 
+                <OrdenItem totalParaPagar={totalParaPagar} elemento={elemento} />
+               
+            </li>
+        )}  
+        </ul>)}
+       
+
+        <Resumen orden={orden} subtotal={subtotal} /> 
       
     </section>
   );
