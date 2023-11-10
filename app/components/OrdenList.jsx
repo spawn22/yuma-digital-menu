@@ -46,7 +46,7 @@ import Resumen from '../components/Resumen'
    
     
   return (
-    <section className='"w-full flex flex-col gap-2 content-center mt-5 mb-6 pt-24 pb-32 items-center text-center'>
+    <section className='w-full flex flex-col gap-2 content-center mt-5 mb-6 pt-24 pb-32 items-center text-center'>
       <h2 className="text-amber-400 text-2xl my-auto font-normal relative text-center">
         ORDEN
       </h2>

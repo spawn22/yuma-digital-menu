@@ -6,7 +6,7 @@ const Resumen = ({orden,subtotal}) => {
   const cargos=0;
 
   return (
-    <section className='w-[95%] h-auto rounded-sm flex relative bg-[#3C3C3C] flex-col gap-2 content-start border border-dashed border-[#F7AD1A] mt-5 mb-6 pt-16 pb-20 text-center'>
+    <section className='md:w-[60%] w-[95%] h-auto rounded-sm flex relative bg-[#3C3C3C] flex-col gap-2 content-start border border-dashed border-[#F7AD1A] mt-5 mb-6 pt-16 pb-20 text-center'>
       <h2 className='text-[#F7AD1A] absolute top-0 right-0 left-0 mt-2 text-2xl mx-auto font-normal h-1  text-center'>RESUMEN</h2>
       
     <div className='text-[#F5F5F5] text-left flex flex-col '>

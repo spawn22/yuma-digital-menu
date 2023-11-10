@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="w-full py-5 shadow-lg bottom-0 left-0 right-0  bg-[#3C3C3C] fixed justify-between  inline-flex">
       <div className="text-center w-2/4 flex flex-wrap text-zinc-100 text-opacity-70 ">
         <p className="content-center text-xs ml-2 font-normal my-auto align-middle items-center">DESARROLLADO POR</p>{" "}
-        <Image alt="logo YUMA landing" priority={false} className="w-24 shadow-xl h-9 " src={logoYumaPalabra} />
+        <Image alt="logo YUMA landing" priority={false} className="w-24 drop-shadow-xl h-9 " src={logoYumaPalabra} />
       </div>
 
       <div className="w-1/4 flex  justify-end gap-2  mr-4">
