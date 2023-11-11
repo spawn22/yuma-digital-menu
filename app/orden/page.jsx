@@ -6,7 +6,7 @@ import OrdenList from '../components/OrdenList'
 
 const page = () => {
   return (
-    <div className='w-full relative  aspect-auto bg-inherit bg-cover bg-[#3C3C3C] flex flex-col'>
+    <div className='w-full relative my-1 aspect-auto bg-inherit bg-cover bg-[#3C3C3C] flex flex-col'>
     <Nav/>
     <OrdenList/>
    
