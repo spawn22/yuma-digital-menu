@@ -103,7 +103,7 @@ const data = [
 
 function CardsFood() {
   return (
-    <div className="flex flex-wrap  ml-24 sm:ml-32 sm:gap-0   md:ml-40 lg:ml-36 mb-36 max-[475px]:ml-24 max-[645px]:gap-0   justify-center gap-10">
+    <div className="flex flex-wrap  ml-24 sm:ml-32 sm:gap-0   md:ml-40 lg:ml-36 mb-36 max-[475px]:ml-24 max-[645px]:gap-0 text-[#F5F5F5]  justify-center gap-10">
       {data.map((item, index) => (
         <div
           key={index}
