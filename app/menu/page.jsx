@@ -7,12 +7,12 @@ import CardsFood from "../components/CardsFood";
 
 function page() {
   return (
-    <>
+    <div className="bg-inherit">
     <Nav/>
     <SectionCategories/>
     <CardsFood/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

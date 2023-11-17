@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import BannerMenu from "../components/BannerMenu.jsx";
-import Footer from "../components/Footer.jsx";
-import Nav from "../components/Nav.jsx";
+import BannerMenu from "./components/BannerMenu.jsx";
+import Footer from "./components/Footer.jsx";
+import Nav from "./components/Nav.jsx";
 
 const page = () => {
   const [navMobile, setNavMobile] = useState(false);
