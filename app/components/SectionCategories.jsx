@@ -37,13 +37,13 @@ function SectionCategories() {
       <h1 className="text-lg sm:text-2xl md:text-3xl sm:ml-0 md:ml-1  lg:ml-4 mb-4 underline text-[#F7AD1A] px-5">
         Secciones
       </h1>
-      <ul className="space-y-7 sm:space-y-8 md:space-y-8 lg:space-y-8 p-4">
+      <ul className="space-y-5 sm:space-y-8 md:space-y-8 lg:space-y-5 p-4">
         {data.map((item, index) => (
           <li key={item.name} className="flex flex-col  items-center mr-36">
             <button
               className={`flex flex-col items-center ${
                 selected === index
-                  ? "ring-2 ring-[#F7AD1A] rounded-full p-2 sm:p-4 md:p-4 lg:p-4"
+                  ? "ring-2 ring-[#F7AD1A] ring-opacity-50 rounded-full p-2 sm:p-4 md:p-4 lg:p-4"
                   : ""
               }`}
               onClick={() => setSelected(index)}
