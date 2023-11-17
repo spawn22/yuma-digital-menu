@@ -14,7 +14,7 @@ const BannerMenu = () => {
       <div className="w-44 h-44 flex drop-shadow-lg bg-zinc-300 bg-opacity-50 rounded-full backdrop-blur-sm">
         <Image
           priority={true}
-          className="w-full aspect-auto object-cover object-center rounded-full"
+          className="w-full aspect-auto object-cover object-center rounded-full "
           alt="logo de la empresa"
           src={fondo}
         />
