@@ -41,11 +41,7 @@ function SectionCategories() {
         {data.map((item, index) => (
           <li key={item.name} className="flex flex-col  items-center mr-36">
             <button
-              className={`flex flex-col items-center ${
-                selected === index
-                  ? "ring-2 ring-[#F7AD1A] ring-opacity-50 rounded-full p-2 sm:p-4 md:p-4 lg:p-4"
-                  : ""
-              }`}
+              className={`flex flex-col items-center `}
               onClick={() => setSelected(index)}
             >
               <Image
@@ -53,7 +49,11 @@ function SectionCategories() {
                 alt={item.name}
                 className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 object-cover"
               />
-              <p className="text-xs sm:text-sm md:text-base text-[#F7AD1A]">
+              <p className={`text-xs sm:text-sm md:text-base ${
+                selected === index
+                  ? "ring-2 underline-[#F7AD1A] decoration-solid underline"
+                  : ""
+              } text-[#F7AD1A]`}>
                 {item.name}
               </p>
             </button>
