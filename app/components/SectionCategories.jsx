@@ -34,24 +34,28 @@ function SectionCategories() {
   const [selected, setSelected] = useState(null);
   return (
     <div className="sidebar fixed left-0 top-24  md:w-72 lg:w-80 flex flex-col justify-between">
-      <h1 className="text-2xl sm:ml-0 md:ml-1  lg:ml-4 mb-4 underline text-[#F7AD1A] px-5">
+      <h1 className="text-lg sm:text-2xl md:text-3xl sm:ml-0 md:ml-1  lg:ml-4 mb-4 underline text-[#F7AD1A] px-5">
         Secciones
       </h1>
-      <ul className="space-y-8 p-4">
+      <ul className="space-y-7 sm:space-y-8 md:space-y-8 lg:space-y-8 p-4">
         {data.map((item, index) => (
-          <li key={item.name} className="flex flex-col items-center mr-36">
+          <li key={item.name} className="flex flex-col  items-center mr-36">
             <button
               className={`flex flex-col items-center ${
-                selected === index ? "ring-2 ring-[#F7AD1A] rounded-full p-4" : ""
+                selected === index
+                  ? "ring-2 ring-[#F7AD1A] rounded-full p-2 sm:p-4 md:p-4 lg:p-4"
+                  : ""
               }`}
               onClick={() => setSelected(index)}
             >
               <Image
                 src={item.image}
                 alt={item.name}
-                className="w-14 h-14 object-cover"
+                className="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 object-cover"
               />
-              <p className="text-[#F7AD1A]">{item.name}</p>
+              <p className="text-xs sm:text-sm md:text-base text-[#F7AD1A]">
+                {item.name}
+              </p>
             </button>
           </li>
         ))}
