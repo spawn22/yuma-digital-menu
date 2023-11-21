@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import {Rajdhani} from 'next/font/google'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 const rajdhani=Rajdhani({weight:['400','700'],subsets:['latin'],
@@ -9,6 +10,7 @@ display:'swap'})
 
 export const metadata = {
   title: 'Yuma digital Menu',
+  icon:[{rel:"icon",href:"/icon.png",type:"image/png",size:"32x32"}] 
 }
 
 export default function RootLayout({ children }) {

@@ -9,7 +9,7 @@ const Footer2 = () => {
   return (
     <section>
 
-<div className="w-full py-1 shadow-md bottom-0 left-0 right-0  bg-[#3C3C3C] fixed justify-between flex-wrap flex">
+<div className="w-full py-1 shadow-inner bottom-0 left-0 right-0  bg-[#3C3C3C]  fixed justify-between flex-wrap flex">
       <div className="text-center w-1/3 flex-wrap flex-grow text-zinc-100 text-opacity-70 ">
         
         <Image alt="logo YUMA landing" priority={true} className="w-[9.5rem]  aspect-auto " src={logoFoot} />

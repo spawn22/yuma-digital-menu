@@ -4,7 +4,7 @@ import BotonHamburguesa from "./BotonHamburguesa"
 
 const Nav = () => {
   return (
-    <div className="w-full flex justify-between top-0 absolute bg-[#3C3C3C] shadow-md ">
+    <div className=" w-full flex flex-wrap  md:flex-row justify-between bg-[#3C3C3C] shadow-md ">
     <div className="flex"><Image  alt="logo de YUMA" priority={true}  className="w-52 h-20  top-0 " src={logoNav} /></div>
     
         

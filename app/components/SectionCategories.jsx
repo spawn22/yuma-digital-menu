@@ -13,7 +13,7 @@ const data = [
     image: pizza,
   },
   {
-    name: "Hamburguesas",
+    name: "Burgers",
     image: burger,
   },
   {
@@ -39,7 +39,7 @@ function SectionCategories() {
       </h1>
       <ul className="space-y-5 sm:space-y-8 md:space-y-8 lg:space-y-5 p-4">
         {data.map((item, index) => (
-          <li key={item.name} className="flex flex-col  items-center mr-36">
+          <li key={item.name} className="flex flex-col my-1 items-center mr-36">
             <button
               className={`flex flex-col items-center ${
                 selected === index ? "shadow-md p-2 sm:p-4 md:p-4 lg:p-4" : ""

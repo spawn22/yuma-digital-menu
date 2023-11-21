@@ -7,9 +7,9 @@ import CardsFood from "../components/CardsFood";
 
 function page() {
   return (
-    <div className="bg-inherit  flex">
+    <div className="bg-inherit ">
     <Nav/>
-    <div className="container flex">
+    <div className="container inline-flex">
     <SectionCategories/>
     <CardsFood/>
     </div>

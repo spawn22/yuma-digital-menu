@@ -6,7 +6,7 @@ import menuIcon from "public/assets/iconos/bar.png";
 
 const BannerMenu = () => {
   return (
-    <div className="w-full flex flex-col gap-2 content-center mt-5 mb-6 pt-24 pb-32 items-center text-center "  >
+    <div className="w-full flex flex-col gap-2 content-center mt-5 mb-6 pt-15 pb-32 items-center text-center "  >
       
       <div className="relative text-neutral-100 text-3xl flex mt-4 font-normal">
         NOMBRE DEL NEGOCIO
